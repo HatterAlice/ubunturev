@@ -94,7 +94,7 @@
                                   
                     <section class="example mt-4">
 
-                      <form method="POST" action="http://localhost:3000/api/v1/productos" role="form" enctype="multipart/form-data">
+                      <form method="POST" action="http://54.152.235.124:3000/api/v1/productos" role="form" enctype="multipart/form-data">
 
                         <input type="hidden" name="_method" value="POST">
 
@@ -178,7 +178,7 @@
     <footer class="text-muted mt-3 mb-3">
     </footer>
     <script type="text/javascript">
-      fetch("http://localhost:3000/api/v1/proveedores/get").then(response => {
+      fetch("http://54.152.235.124:3000/api/v1/proveedores/get").then(response => {
           if(response.ok) {
               return response.json();
           }

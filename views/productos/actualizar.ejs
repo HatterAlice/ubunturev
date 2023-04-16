@@ -194,7 +194,7 @@
     <!-- JS Bootstrap  --> 
     <script type="text/javascript" src="./js/bootstrap.min.js"></script>
     <script type="text/javascript">
-      fetch("http://localhost:3000/api/v1/proveedores/get").then(response => {
+      fetch("http://54.152.235.124:3000/api/v1/proveedores/get").then(response => {
           if(response.ok) {
               return response.json();
           }
@@ -219,7 +219,7 @@
         var url = new URL(window.location.href);
         const id = url.searchParams.get("id");
 
-        fetch("http://localhost:3000/api/v1/productos/"+ id).then(response => {
+        fetch("http://54.152.235.124:3000/api/v1/productos/"+ id).then(response => {
             if(response.ok) {
                 return response.json();
             }
@@ -231,11 +231,11 @@
                     
                     ar.forEach((elem) => {
                       document.getElementById("id").setAttribute('value', elem.id); 
-                      document.getElementById('actualizar').action = "http://localhost:3000/api/v1/productos/"+ elem.id;
+                      document.getElementById('actualizar').action = "http://54.152.235.124:3000/api/v1/productos/"+ elem.id;
                       document.getElementById("nombre").setAttribute('value', elem.nombre);                 
                       document.getElementById("precio").setAttribute('value', elem.precio); 
                       document.getElementById("stock").setAttribute('value', elem.stock);
-                      document.getElementById("imgactual").src = "http://localhost:3000/uploads/" + elem.img;                       
+                      document.getElementById("imgactual").src = "http://54.152.235.124:3000/uploads/" + elem.img;                       
                     });
                 
             

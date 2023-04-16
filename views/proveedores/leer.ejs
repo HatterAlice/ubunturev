@@ -167,7 +167,7 @@
         var url = new URL(window.location.href);
         const id = url.searchParams.get("id");
 
-        fetch("http://localhost:3000/api/v1/proveedores/get/"+ id).then(response => {
+        fetch("http://54.152.235.124:3000/api/v1/proveedores/get/"+ id).then(response => {
             if(response.ok) {
                 return response.json();
             }
