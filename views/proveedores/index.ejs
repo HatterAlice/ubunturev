@@ -168,7 +168,7 @@
 
     <!-- Código Para Mostrar la Tabla con los datos -->
     <script type="text/javascript">
-      fetch("http://54.152.235.124:3000/api/v1/proveedores/get").then(response => {
+      fetch("http://3.86.95.227:3000/api/v1/proveedores/get").then(response => {
           if(response.ok) {
               return response.json();
           }
@@ -189,7 +189,7 @@
                         <td class=v-align-middle>${elem.nombreprov}</td>
                         <td class=v-align-middle>${elem.telefono}</td>
                         <td class=v-align-middle>
-                          <form action="http://54.152.235.124:3000/api/v1/proveedores/eliminar/${elem._id}" method="POST" onsubmit="return confirmarEliminar()">        
+                          <form action="http://3.86.95.227:3000/api/v1/proveedores/eliminar/${elem._id}" method="POST" onsubmit="return confirmarEliminar()">        
 
                             <a href="/proveleer?id=${elem._id}" class="btn btn-dark">Detalles</a>
 
