@@ -182,7 +182,7 @@
         var url = new URL(window.location.href);
         const id = url.searchParams.get("id");
 
-        fetch("http://54.152.235.124:3000/api/v1/productos/"+ id).then(response => {
+        fetch("http://3.86.95.227:3000/api/v1/productos/"+ id).then(response => {
             if(response.ok) {
                 return response.json();
             }
@@ -198,7 +198,7 @@
                       document.getElementById("precio").innerHTML = elem.precio; 
                       document.getElementById("stock").innerHTML = elem.stock;
                       document.getElementById("nomProv").innerHTML = elem.nomProv;
-                      document.getElementById("img").src = "http://54.152.235.124:3000/uploads/" + elem.img; 
+                      document.getElementById("img").src = "http://3.86.95.227:3000/uploads/" + elem.img; 
                     });
                 
             
